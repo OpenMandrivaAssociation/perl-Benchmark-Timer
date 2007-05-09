@@ -1,7 +1,7 @@
 %define real_name Benchmark-Timer
 %define	name perl-%{real_name}
 %define	version 0.7100
-%define	release %mkrel 2
+%define	release %mkrel 3
 
 Summary:	Benchmark::Timer - Perl code benchmarking tool
 Name:		%{name}
