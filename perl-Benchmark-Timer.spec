@@ -14,7 +14,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Benchmark/%{real_name}-%{
 BuildRequires:	perl-devel
 BuildRequires:	perl(Statistics::TTest)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The Benchmark::Timer class allows you to time portions of code
