@@ -1,7 +1,7 @@
 %define real_name Benchmark-Timer
 %define	name perl-%{real_name}
-%define	version 0.7100
-%define	release %mkrel 3
+%define	version 0.7101
+%define	release %mkrel 1
 
 Summary:	Benchmark::Timer - Perl code benchmarking tool
 Name:		%{name}
@@ -42,6 +42,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc CHANGES LICENSE README
-%{perl_vendorlib}/Benchmark/Timer.pm
+%{perl_vendorlib}/Benchmark
 %{_mandir}/man3/*
 
