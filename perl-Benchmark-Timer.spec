@@ -1,7 +1,7 @@
 %define real_name Benchmark-Timer
 %define	name perl-%{real_name}
 %define	version 0.7101
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Summary:	Benchmark::Timer - Perl code benchmarking tool
 Name:		%{name}
@@ -11,6 +11,7 @@ License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Benchmark/%{real_name}-%{version}.tar.bz2
+Patch0:		Benchmark-Timer-fix-dep.patch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Statistics::TTest)
 BuildArch:	noarch
@@ -26,6 +27,7 @@ profile your code.
 
 %prep
 %setup -q -n %{real_name}-%{version} 
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
