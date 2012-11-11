@@ -1,0 +1,9 @@
+diff -p -up ./delta.pl.tv ./delta.pl
+--- ./delta.pl.tv	2008-07-15 13:45:45.000000000 +0200
++++ ./delta.pl	2008-07-21 09:48:36.000000000 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ # ========================================================================
+ # delta.pl - calculate Benchmark::Timer object call overhead
+ # Andrew Ho (andrew@zeuscat.com)
