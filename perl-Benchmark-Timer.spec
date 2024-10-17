@@ -8,7 +8,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	17
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Benchmark/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:		Benchmark-Timer-fix-dep.patch
 BuildArch:	noarch
