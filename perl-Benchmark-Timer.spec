@@ -12,6 +12,7 @@ Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Benchmark/%{upstream_name}-%{upstream_version}.tar.gz
 Patch0:		Benchmark-Timer-fix-dep.patch
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Statistics::TTest)
 BuildRequires:	perl-devel
 
