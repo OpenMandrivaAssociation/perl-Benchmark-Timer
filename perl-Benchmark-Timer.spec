@@ -1,15 +1,15 @@
 %define upstream_name    Benchmark-Timer
-%define	upstream_version 0.7102
+%define	upstream_version 0.7112
 
 Summary:	Benchmark::Timer - Perl code benchmarking tool
 Name:		perl-%{upstream_name}
 Epoch:		1
-Version:	%perl_convert_version %{upstream_version}
-Release:	17
+Version:	%{upstream_version}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Benchmark/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/coppit/benchmark-timer
+Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCOPPIT/Benchmark-Timer-%{upstream_version}.tar.gz
 Patch0:		Benchmark-Timer-fix-dep.patch
 BuildArch:	noarch
 BuildRequires:	make
