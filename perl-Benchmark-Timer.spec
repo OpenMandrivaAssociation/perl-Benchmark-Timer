@@ -1,15 +1,13 @@
 %define upstream_name    Benchmark-Timer
-%define	upstream_version 0.7112
-
 Summary:	Benchmark::Timer - Perl code benchmarking tool
 Name:		perl-%{upstream_name}
 Epoch:		1
-Version:	%{upstream_version}
-Release:	1
+Version:	0.7112
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/coppit/benchmark-timer
-Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCOPPIT/Benchmark-Timer-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DC/DCOPPIT/Benchmark-Timer-%{version}.tar.gz
 Patch0:		Benchmark-Timer-fix-dep.patch
 BuildArch:	noarch
 BuildRequires:	make
@@ -25,7 +23,7 @@ Benchmark module will give you, but don't want to go all out and
 profile your code.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%setup -qn %{upstream_name}-%{version}
 %patch0 -p0
 
 %build
